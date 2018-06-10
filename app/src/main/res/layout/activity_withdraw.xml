@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context="com.a2zdaddy.winningwheel.WithdrawActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Coins :"
+                android:id="@+id/cointext"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000"
+                android:layout_marginStart="10dp"
+                android:id="@+id/coin"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="32sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equivalent Dollar:  $"
+                android:id="@+id/rupeestext"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginStart="2dp"
+                android:id="@+id/rupees"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need Help ? "
+            android:layout_marginStart="10dp"
+            android:id="@+id/contact"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbackground"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Redeem Coins"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/witthdarwtext"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="#ffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Minimum balance $30 to Redeem"
+                android:id="@+id/warning"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Method of Payment"
+                android:id="@+id/methodtext"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:entries="@array/payment_method"
+                android:id="@+id/paymentspin">
+            </Spinner>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/phoneno"
+                android:hint=" Enter PayPal Account Details"
+                android:textColorHint="#ffffff"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Submit Request"
+                android:layout_gravity="center"
+                android:id="@+id/submitrequest"
+                android:background="@drawable/roundbackground"
+                android:textSize="10sp"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Payment Details"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/Lastpaymenttext"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="10dp"
+                android:background="#ffffff" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAYMENT METHOD: "
+                    android:id="@+id/method"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/paymentmode"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/paymentno"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment status: "
+                    android:id="@+id/stat"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/paymentstat"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Usually takes 1-5 Days"
+                android:layout_marginStart="10dp"
+                android:id="@+id/paymentnot"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:layout_marginBottom="70dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="10dp"
+            android:background="#ffffff" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

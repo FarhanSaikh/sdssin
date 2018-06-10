@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "375314177871",
+    "firebase_url": "https://earncash-76531.firebaseio.com",
+    "project_id": "earncash-76531",
+    "storage_bucket": "earncash-76531.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375314177871:android:a2a957f287436909",
+        "android_client_info": {
+          "package_name": "com.a2zdaddy.winningwheel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375314177871-hbsse688b9carg283t3qpqfr12194r6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a2zdaddy.winningwheel",
+            "certificate_hash": "61308cb178b5c1f8ffe92ae3f8cccb91ebddc9c5"
+          }
+        },
+        {
+          "client_id": "375314177871-34fas6958sga0tu4i7lee8578kr6801v.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "375314177871-34fas6958sga0tu4i7lee8578kr6801v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoa--Pu_w8cXR0RfkEG6UfrJHziXY6GF4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375314177871-34fas6958sga0tu4i7lee8578kr6801v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
